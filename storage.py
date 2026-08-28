@@ -9,6 +9,12 @@ from config import DATA_DIR, USERS_FILE, CONVERSATIONS_FILE
 # Bir vaqtda bir nechta yozuv operatsiyasi fayllarni buzib qo'ymasligi uchun lock
 _write_lock = asyncio.Lock()
 
+# --- Per-chat holat qiymatlari ---
+# AI_ACTIVE  -> JARVIS shu chatda javob berishda davom etadi
+# HUMAN_ACTIVE -> Mirzohid shu chatga o'zi yozgan, JARVIS aralashmaydi
+AI_ACTIVE = "AI_ACTIVE"
+HUMAN_ACTIVE = "HUMAN_ACTIVE"
+
 
 def _ensure_data_dir() -> None:
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -62,6 +68,8 @@ async def upsert_user(chat_id: str, sender) -> None:
         user.setdefault("first_seen_at", now)
         # JARVIS bu foydalanuvchi bilan avval tanishtirilganmi — yo'q bo'lsa False
         user.setdefault("introduced", False)
+        # Shu chat uchun holat: AI_ACTIVE yoki HUMAN_ACTIVE — yo'q bo'lsa default AI_ACTIVE
+        user.setdefault("state", AI_ACTIVE)
         users[chat_id] = user
         _save_json(USERS_FILE, users)
 
@@ -78,6 +86,42 @@ async def mark_introduced(chat_id: str) -> None:
         users = load_users()
         user = users.get(chat_id, {})
         user["introduced"] = True
+        users[chat_id] = user
+        _save_json(USERS_FILE, users)
+
+
+def get_chat_state(chat_id: str) -> str:
+    """
+    Shu CHAT uchun joriy holatni qaytaradi (AI_ACTIVE yoki HUMAN_ACTIVE).
+    Default: AI_ACTIVE. Bu Telegram online/offline statusiga bog'liq emas —
+    faqat Mirzohidning aynan shu chatga o'zi yozgan-yozmaganini bildiradi.
+    """
+    users = load_users()
+    return users.get(chat_id, {}).get("state", AI_ACTIVE)
+
+
+async def set_chat_state(chat_id: str, state: str) -> None:
+    """Shu chat uchun holatni yozadi: AI_ACTIVE yoki HUMAN_ACTIVE."""
+    async with _write_lock:
+        users = load_users()
+        user = users.get(chat_id, {})
+        user["state"] = state
+        user["state_updated_at"] = datetime.now().isoformat()
+        users[chat_id] = user
+        _save_json(USERS_FILE, users)
+
+
+def get_last_sticker(chat_id: str):
+    """Shu chatda oxirgi yuborilgan sticker kategoriyasini qaytaradi (takrorlamaslik uchun)."""
+    users = load_users()
+    return users.get(chat_id, {}).get("last_sticker")
+
+
+async def set_last_sticker(chat_id: str, sticker_key: str) -> None:
+    async with _write_lock:
+        users = load_users()
+        user = users.get(chat_id, {})
+        user["last_sticker"] = sticker_key
         users[chat_id] = user
         _save_json(USERS_FILE, users)
 

@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict
-
-# --- Mirzohid haqida statik ma'lumotlar (faqat shu yerda o'zgartiring) ---
 OWNER_NAME = "Mirzohid"
 OWNER_ONLINE_HOURS = "08:00 dan 22:00 gacha"
 

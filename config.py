@@ -41,3 +41,13 @@ CONVERSATIONS_FILE = os.path.join(DATA_DIR, "conversations.json")
 
 # --- Suhbat konteksti chuqurligi ---
 MAX_HISTORY_MESSAGES = int(_get_env("MAX_HISTORY_MESSAGES", required=False, default="10"))
+
+# --- Ketma-ket kelayotgan xabarlarni yig'ib, bittalab javob berish uchun kutish vaqti (sekund) ---
+MESSAGE_DEBOUNCE_SECONDS = float(
+    _get_env("MESSAGE_DEBOUNCE_SECONDS", required=False, default="3")
+)
+
+# --- Sticker yuborishni yoqish/o'chirish (default: o'chirilgan) ---
+ENABLE_STICKERS = (
+    _get_env("ENABLE_STICKERS", required=False, default="false").strip().lower() == "true"
+)
