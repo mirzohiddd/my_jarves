@@ -109,6 +109,36 @@
       "role": "assistant",
       "text": "Kechirasiz, men Mirzohid nomidan uchrashuv yoki aloqani tashkil qila olmayman. Mirzohid odatda ertalab 08:00 dan kechqurungacha Telegramdan foydalanadi. 🙏😊",
       "timestamp": "2026-08-27T05:29:31.014077"
+    },
+    {
+      "role": "user",
+      "text": "Salom",
+      "timestamp": "2026-09-01T03:55:20.423955"
+    },
+    {
+      "role": "assistant",
+      "text": "Salom! Bugun qanday yordam kerak? 😊",
+      "timestamp": "2026-09-01T03:55:25.671173"
+    },
+    {
+      "role": "user",
+      "text": "Salom",
+      "timestamp": "2026-09-01T03:55:35.861058"
+    },
+    {
+      "role": "assistant",
+      "text": "Salom! Qanday yordam bera olishimni ayting. 😊",
+      "timestamp": "2026-09-01T03:55:39.744303"
+    },
+    {
+      "role": "user",
+      "text": "Mirzohid yaxshimisiz",
+      "timestamp": "2026-09-01T03:55:54.506370"
+    },
+    {
+      "role": "assistant",
+      "text": "Kechirasiz, Mirzohidning hozirgi holati haqida ma‘lumotim yo‘q. Mirzohid odatda ertalab 08:00 dan kechqurungacha Telegramdan foydalanadi. 🙏😊",
+      "timestamp": "2026-09-01T03:55:58.954632"
     }
   ],
   "1019061807": [
@@ -121,6 +151,50 @@
       "role": "assistant",
       "text": "Assalomu alaykum 👋\nMen Mirzohid tomonidan yaratilgan JARVIS AI Agentman 🤖\nHozir Mirzohid Telegramda emaslar, shuning uchun siz bilan vaqtincha men suhbatlashaman.",
       "timestamp": "2026-08-27T05:28:08.977722"
+    }
+  ],
+  "7470700324": [
+    {
+      "role": "user",
+      "text": "1. BOTGA KIRGANDA\n🤍 Saraton STOP hamjamiyatiga xush kelibsiz!\nBu saraton tashxisi bilan yashayotgan insonlar va ularning yaqinlari uchun yopiq guruh.\nGuruhga kirish uchun 5 ta qisqa savolga javob bering.\nTugma:\nBoshlash\n\n2. SIZ KIMSIZ?\nTugmalar:\n• Bemorman\n• Bemorning yaqiniman\n• Boshqa\n\n3. QAYSI GURUHGA KIRMOQCHISIZ?\nTugmalar:\n• Saraton STOP\n• Ko‘krak Saratoni STOP\n• Bosh Miya Saratoni STOP\n\n4. GURUHGA NIMA MAQSADDA KIRMOQCHISIZ?\nTugmalar:\n• Tajriba va fikr almashish\n• Foydali ma’lumot olish\n• Ruhiy qo‘llab-quvvatlash olish\n• Reklama yoki savdo qilish\n• Boshqa\nAgar “Reklama yoki savdo qilish” tanlansa:\n❌ Bu guruh reklama va savdo uchun mo‘ljallanmagan.\nTugma:\nOrqaga qaytish\n\n5. QOIDALARGA ROZIMISIZ?\nGuruhda:\n• hurmat bilan muloqot qilish;\n• boshqalarning ma’lumotlarini tarqatmaslik;\n• reklama va savdo qilmaslik;\n• tekshirilmagan davolash usullarini tavsiya qilmaslik kerak.\nGuruhdagi ma’lumotlar tibbiy maslahat o‘rnini bosmaydi.\n\nTugmalar:\n• Roziman\n• Rozi emasman\n6. ISMINGIZNI YOZING\nGuruhda sizga qanday murojaat qilishimizni xohlaysiz?\n\nIsmingizni yozing:\n\nARIZA YUBORILGANDA\n✅ Arizangiz qabul qilindi!\nJavoblaringiz tekshirilmoqda. Tasdiqlangandan keyin guruhga kirish havolasi shu bot orqali yuboriladi.\n\n\nARIZA TASDIQLANGANDA\n✅ Arizangiz tasdiqlandi!\nQuyidagi havola orqali {guruh_nomi} guruhiga qo‘shiling:\n🔗 {guruh_havolasi}\nHavola faqat siz uchun yaratilgan. Uni boshqa odamlarga yubormang.\n\nTugma:\nGuruhga kirish\n\nGURUHGA KIRGANDAN KEYIN\n🤍 {ism}, hamjamiyatimizga xush kelibsiz!\nBu yerda tajriba almashishingiz, savollar berishingiz va ruhiy qo‘llab-quvvatlovchi materiallarni tinglashingiz mumkin.\nBoshqa ishtirokchilarni hurmat qiling va ularning shaxsiy ma’lumotlarini tarqatmang.\n⚠️ Guruhdagi ma’lumotlar shifokor tavsiyasini almashtirmaydi.",
+      "timestamp": "2026-09-01T03:57:25.419316"
+    },
+    {
+      "role": "assistant",
+      "text": "Assalomu alaykum, Abdulloh A! 👋\n\nMen Mirzohidning JARVIS AI yordamchisiman. U hozir sizga shaxsan javob bera olmayapti, shu payt men yordam beraman 😊\nNima kerak, bemalol yozavering!",
+      "timestamp": "2026-09-01T03:57:28.580862"
+    }
+  ],
+  "7062235194": [
+    {
+      "role": "user",
+      "text": "It",
+      "timestamp": "2026-09-01T03:59:30.799841"
+    },
+    {
+      "role": "assistant",
+      "text": "Assalomu alaykum, Миролим Акрамович! 👋\n\nMen Mirzohidning JARVIS AI yordamchisiman. U hozir sizga shaxsan javob bera olmayapti, shu payt men yordam beraman 😊\nNima kerak, bemalol yozavering!",
+      "timestamp": "2026-09-01T03:59:33.940990"
+    },
+    {
+      "role": "user",
+      "text": "It qayerda",
+      "timestamp": "2026-09-01T03:59:44.581583"
+    },
+    {
+      "role": "assistant",
+      "text": "\"It\" haqida qo‘shimcha ma’lumot bera olasizmi? Qaysi narsa yoki joyni nazarda tutayotganingizni bilsam, yordam berishim osonroq bo‘ladi. 😊",
+      "timestamp": "2026-09-01T03:59:48.663002"
+    },
+    {
+      "role": "user",
+      "text": "Mirzohid itni so'rayabman",
+      "timestamp": "2026-09-01T04:00:03.916887"
+    },
+    {
+      "role": "assistant",
+      "text": "Kechirasiz, lekin men Mirzohidning it haqida qandaydir ma’lumoti borligini bilmayman. Bu haqda u qaytib kelganda so‘rashingizni tavsiya qilaman. 😊",
+      "timestamp": "2026-09-01T04:00:08.367507"
     }
   ]
 }

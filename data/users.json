@@ -4,9 +4,10 @@
     "username": null,
     "first_name": "Dadam",
     "last_name": null,
-    "last_message_at": "2026-08-27T05:29:29.005766",
+    "last_message_at": "2026-09-01T03:55:54.504730",
     "first_seen_at": "2026-08-27T05:25:31.127834",
-    "introduced": true
+    "introduced": true,
+    "state": "AI_ACTIVE"
   },
   "1019061807": {
     "chat_id": "1019061807",
@@ -16,5 +17,26 @@
     "last_message_at": "2026-08-27T05:28:08.807613",
     "first_seen_at": "2026-08-27T05:28:08.807613",
     "introduced": true
+  },
+  "7470700324": {
+    "chat_id": "7470700324",
+    "username": "abdullohalijonov",
+    "first_name": "Abdulloh A",
+    "last_name": null,
+    "last_message_at": "2026-09-01T03:57:25.417814",
+    "first_seen_at": "2026-09-01T03:57:25.417814",
+    "introduced": true,
+    "state": "AI_ACTIVE"
+  },
+  "7062235194": {
+    "chat_id": "7062235194",
+    "username": "dermatonutritsiolog",
+    "first_name": "Миролим Акрамович",
+    "last_name": null,
+    "last_message_at": "2026-09-01T04:00:03.914742",
+    "first_seen_at": "2026-09-01T03:59:30.798090",
+    "introduced": true,
+    "state": "HUMAN_ACTIVE",
+    "state_updated_at": "2026-09-01T04:06:03.944168"
   }
 }
